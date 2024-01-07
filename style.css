@@ -1,0 +1,584 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto:wght@700&display=swap');
+
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.body-container{
+    
+    
+    flex-direction: row;
+    
+}
+.left-div{
+    margin: 0.4vw 0 0.4vw 0.4vw;
+    width: 19.5vw;
+    gap: 0.3vw;
+    flex-direction: column;
+    
+    
+}
+.right-div{
+    width: 82vw;
+    
+    margin: 0.4vw;
+    height: 100vh;
+    overflow-y: scroll;
+    border-radius: 10px;
+    background-color:  #121212;
+    
+    
+}
+
+
+.left-top,.left-bottom{
+    flex-direction: column;
+    gap: 1vw;
+    background-color:  #121212;
+    border-radius: 10px;
+    width:18.9vw;
+    
+}
+
+
+.logo-img{
+    margin: 1.2vw 1vw 0  ;
+}
+
+.left-top ul li{ 
+      display: flex;
+      width: 25px;
+      gap: 10px;
+      margin: 5px;
+      list-style: none;
+      margin: 1vw 0.6vw ;
+      
+      font-weight: bold;
+      font-size: 14px;
+}
+
+.left-top ul{
+    margin: 0vw 0.6vw ;
+}
+
+
+
+.left-bottom {
+    height: 80vh;
+    min-height: 20vh;
+    margin-bottom: 7%;
+    margin-top: 0.9vh;
+}
+
+.playlist,.podcast{
+    flex-direction: column;
+    width: 96%;
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 15px;
+}
+.library-title{
+    padding: 15px;
+    justify-content: space-between;
+}
+.lib-img{
+    height: 20px;
+    margin: 2% 0% 2% 2%;
+    
+
+}
+.library-title h1{
+    font-size: 15px;
+    margin: 2.5%;
+}
+.library-board{
+    flex-direction: column;
+    gap: 1vw    ;
+    
+}
+
+.playlist h2,.podcast h2{
+    font-size: 15px;
+}
+.playlist p,.podcast p{
+    font-size: 10px;
+    font-weight: 100;
+}
+.create-playlist{
+    font-size: 0.8vw;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    justify-content: center;
+    width: 6vw;
+    height: 1.5vw;
+    margin-top: 1vw;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+.create-playlist:hover,.footer-btn:hover,.signup-btn:hover,.login-btn:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.left-footer{
+ flex-direction: column;
+ margin-top: 20vh;
+     
+}
+.footer{
+    height: 12vh;
+    
+    flex-wrap: wrap; 
+   gap: 1vw;
+}
+.footer a{
+    
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 50;
+    margin:  0.5vw  ;
+    font-size: 10px;
+    height: 5px;
+}
+.footer-btn{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    justify-content: center;
+    width: 6vw;
+    height: 1.5vw;
+    margin-top: 2vw;
+    border-radius: 15px;
+    border: solid white 1px;
+    background-color: transparent;
+    color: aliceblue;
+}
+   
+.earth-img{
+    height: 1vw;
+    margin-left: 1vw;
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #121212;
+    border-radius: 10px 10px 0px 0px;
+}
+.buttons{
+    margin: 5px;
+}
+.signup-btn,.login-btn{
+    width: 6vw;
+    
+    height: 1.5vw;
+    padding: 10px 10px 30px 10px;
+    border-radius: 20px;
+    border: none;
+}
+.signup-btn{
+    color: aliceblue;
+    background-color: transparent;
+    
+}
+.nav-img{
+    margin: 5px;
+    background-color: rgb(11, 11, 11);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.card-container{
+    height: 70vh;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    
+}
+.card-container::-webkit-scrollbar {
+    width: 0.5em; /* Set the width of the scrollbar */
+  }
+  
+  .card-container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the color of the thumb (the moving part) */
+  }
+  
+  .card-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the color of the track (the non-moving part) */
+  }
+.card{
+    width: 200px;
+    height: 300px;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background :linear-gradient(0deg,#1a1a1a 20% ,#161616 100% );
+    position: relative;
+
+}
+.card:hover{
+    background :linear-gradient(0deg,#2a2a2a 20% , #262626 100% );
+}
+.card > *{
+    margin-top: 5px;
+}    
+.card h2{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.card p{
+    font-size: 15px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.svg-img{
+    position: absolute;
+    height: 2.5vw;
+    top: 40%;
+    left: 20%;
+}
+.r-footer-clm{
+    width: 20%;
+    margin: 8px;
+    
+}
+.r-footer-clm a{
+    text-decoration: none;
+    margin: 5px;
+    color: aliceblue;
+    font-size: 15px;
+}
+.right-footer{
+    z-index: 1;
+    margin-top: 15%;
+}
+.right-footer hr{
+    border: 0; 
+    width: 95%;
+
+    height: 0.8px; 
+    background-color: #555; 
+    margin: 10px auto; 
+    opacity: 0.5;
+}
+.copyright{
+    height: 20vh;
+}
+.copyright h4{
+    margin: 20px;
+    font-weight: 100;
+}
+.sptitle {
+    height: 70vh;
+    
+    background :linear-gradient(0deg,#121212 75% ,#171717 100% )
+}
+.sptitle h1{
+    margin: 10px;
+}
+.play-button{
+    padding-top: 2vh;
+    gap: 1vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 82%;
+    left: 22.5%;
+    width: 75%;
+    background-color: rgba(54, 54, 54, 0.154);
+    border-radius: 5px;
+}
+
+
+
+/* For WebKit-based browsers (such as Chrome/Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #333; /* Change the background color of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #666; /* Change the color of the scrollbar */
+    border-radius: 6px; /* Roundness of the scrollbar thumb */
+  }
+  
+
+ #seekBackward,#playBtn,#seekForward,#pauseBtn {
+    margin: 10px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    border: none;
+    
+  }
+  #playBtn{
+    background-color:  rgb(25, 215, 25);    ;
+  }
+  .seek-div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    width: 80%;
+  }
+  #seekSlider{
+    width: 70%;
+  }
+  .library-title-inner-1{
+    width: 50%;
+   
+  }
+  .library-title-inner-1 i{
+    margin-top: 1vh;
+  }
+  #plus{
+    cursor: pointer;
+  }
+
+
+  .artist-img-div{
+    justify-content: center;
+    align-items: center;
+    width: 79vw;
+  }
+  #artist-img{
+    height: 30%;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+  }
+  .songList-div{
+    
+    align-items: center;
+    width: 79vw;
+    height: 40vh;
+    flex-direction: column;
+  }
+  .playlist-song{
+    border: solid white 1px;
+    border-radius: 5px;
+    width: 70vw;
+    padding: 3vh;
+    margin-top: 3vh;
+    align-items: center;
+    
+    margin: 0.5vw;
+    height: 2vw;
+  }
+  .playlist1{
+    display: flex;
+    height: 70vh;
+    position: relative;
+  }
+  .music-img{
+    height: 3vh;
+    margin-right: 2vh;
+  }
+
+
+  /* Apply styles for devices with a minimum width of 1024 pixels and a maximum width of 1279 pixels */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Your styles for larger tablets or small desktops go here */
+    .create-playlist:hover,.footer-btn:hover,.signup-btn:hover,.login-btn:hover{
+        scale: 1.1;
+        cursor: pointer;
+    }
+    .card:hover{
+        background :linear-gradient(0deg,#2a2a2a 20% , #262626 100% );
+    }
+    .svg-img {
+        position: absolute;
+        height: 3.5vw;
+        top: 43%;
+        left: 25%;
+    }
+    .create-playlist,.footer-btn{
+        width: 10vw;
+        height: 2.5vh;
+    }
+    .left-bottom,.left-top{
+        
+        width: 28vw;
+        /* margin-left: 12vw; */
+    }
+    .left-div{
+        display: flex;
+        
+        height: 100vh;
+        width: 29vw;
+    }
+    .left-bottom{
+        height: 80vh;
+        margin-top: 1vh;
+    }
+    .left-top{
+        height: 25vh;
+        
+
+    }
+    .songList-div,.artist-img-div{
+        width: 60vw;
+        height: 40vh;
+    }
+    .right-div{
+        overflow-x: hidden;
+        width: 70vw;
+       
+    
+    }
+    .play-button{
+        top: 75%;
+    }
+  
+    .playlist-song{
+        width: 50vw;
+    }
+    #artist-img {
+        height: 30vh;
+        width: 30vh;
+        border-radius: 10px;
+        margin-bottom: 2%;
+    }
+ 
+      
+    .play-button {
+        padding-top: 2vh;
+        gap: 1vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: 77%;
+        left: 22.5%;
+        width: 62%;
+        background-color: rgba(54, 54, 54, 0.154);
+        border-radius: 5px;
+        margin-left: 108px;
+    }
+}
+/* Apply styles for devices with a maximum width of 767 pixels (phones) */
+@media only screen and (max-width: 767px) {
+    /* Your styles for mobile devices go here */
+    .create-playlist:hover,.footer-btn:hover,.signup-btn:hover,.login-btn:hover{
+        scale: 1.1;
+        cursor: pointer;
+    }   
+    .card:hover{
+        background :linear-gradient(0deg,#2a2a2a 20% , #262626 100% );
+    }   
+    body{
+        overflow-x: hidden;
+    }
+    .left-div{
+        display: none !important;
+        gap: 5vh;
+        
+    }
+    .left-div{
+        display: none;
+    }
+    
+    .right-div,.sptitle,.songList-div{
+        width: 100% ;
+        overflow-x:unset; 
+        margin: 0%;
+    }
+    .playlist-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .songList-div,.artist-img-div{
+        width: 100vw;
+        height: 40vh;
+        
+    }
+    #artist-img {
+        height: 30vh;
+        width: 30vh;
+        border-radius: 10px;
+        margin-bottom: 2%;
+    }
+    .card{
+        height: 340px !important;
+        width: 250px;
+    }
+    .card-container {
+        height: 75vh;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        justify-content: center;
+    }
+    .footer-div{
+        margin-top: 10vh;
+    }
+    .play-button {
+        padding-top: 2vh;
+        gap: 1vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: 78%;
+        left: 10.5%;
+        width: 75%;
+        background-color: rgba(54, 54, 54, 0.154);
+        border-radius: 5px;
+    }
+    .buttons {
+        margin: 5px;
+        width: 50%;
+    }
+    .signup-btn, .login-btn {
+        width: 22vw;
+        height: 1.5vw;
+        padding: 10px 10px 30px 10px;
+        border-radius: 20px;
+        border: none;
+    }
+    .play-button {
+        padding-top: 2vh;
+        gap: 1vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        top: 78%;
+        left: 10.5%;
+        width: 75%;
+        background-color: rgba(54, 54, 54, 0.154);
+        border-radius: 5px;
+    }
+    .svg-img {
+        position: absolute;
+        height: 10.5vw;
+        top: 50%;
+        left: 27%;
+    }
+}
+

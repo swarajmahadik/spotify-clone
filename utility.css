@@ -1,0 +1,34 @@
+
+.border{
+    height: 2vh;
+    border: solid red 2px;
+}
+.img-pos{
+    margin: 5px 10px;
+}
+.flex{
+    display: flex;
+    /* flex-direction: row; */
+}
+.justify-center{
+    justify-content: center;
+}
+.center-item{
+    align-items: center;
+}
+.change-color{
+    
+    filter: invert(100%);
+
+}
+.flex-clm{
+    display: flex;
+    flex-direction: column;
+}
+.hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
